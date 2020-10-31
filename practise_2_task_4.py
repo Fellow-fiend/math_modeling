@@ -1,6 +1,9 @@
 n = int(input())
-a = [0, 1]
+a = 0
+b = 1
+c = 0
 for i in range(n):
-  a.append(int(a[i])+int(a[i+1]))
-for i in range(n):
-  print(a[i], sep=' ')
+  c = a
+  a = b
+  b += c
+  print(a, sep=' ')
