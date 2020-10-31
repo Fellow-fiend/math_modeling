@@ -1,8 +1,8 @@
+import math
 a = int(input())
-b = int(input())
-c = int(input())
-if(a + b > c and a + c > b and b + c > a):
-  if(a == b == c): print("равносторонний")
-  elif(a != b != c): print("разносторонний")
-  else: print("равнобедренный")
-else: print("Ты такие вещи не говори")
+n = int(math.log(a, 10))
+temp = 0
+for i in range(n):
+  temp += ((a // (10**i)) % 10) * 10**(n-i)
+temp += a // (10**n)
+print(temp)
