@@ -1,0 +1,4 @@
+import practise_3_task_1
+import practise_3_task_2
+import practise_3_task_3
+
